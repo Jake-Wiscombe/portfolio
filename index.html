@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Wiscombe | Student Portfolio</title>
+
+    <!---------- Goole Font Import (Kanit) ---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!---------- Font Awesome Icons Import ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!---------- Linking External CSS ---------->
+    <link rel="stylesheet" href="styles.css">
+
+    <!---------- Linking External JS ---------->
+    <link rel="script" href="script.js">
+
+    <!---------- Website Title & Icon ---------->
+    <title>Jake Wiscombe | Student Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/wave.jpeg">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html" class="header-logo">Jake Wiscombe</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" id="menu-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <button class="hire-btn">HIRE ME</button>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menu-open" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="banner-content">
+        <div class="text-box">
+            <h1>Jake <span>Wiscombe</span></h1>
+            <p>I'm a young student, currently studying for their A-Levels, who has a growing passion for web design and development. Hoping to fulfill a career in web development in the near future.</p>
+
+            <div class="media-icons">
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com/djfozzydiscos?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://m.me/DJFozzyDiscos/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!---------- About Me Section ---------->
+    <section class="about-me">
+        <div class="section-container">
+            <!-- <h1 class="section-title">About Myself</h1> -->
+
+            <div class="section-row">
+                <div class="section-col left">
+                    <h1 class="col-title">Hey, I'm Jake Wiscombe!</h1>
+                    <p>Your go-to destination for top-notch music entertainment within your local community and surrounding areas. We are a father and son team, combining our
+                        passion for music and expertise to deliver unforgettable experiences for all types of events.
+                    <br>
+                    <br>
+                        At DJ Fozzy Discos, we understand the power of music and its ability to create an atmosphere, set the mood and bring people together. With our extensive
+                        knowledge and experience, we have curated a vast collection of songs from different genres, eras and styles. From classic hits to the current chart-toppers, we
+                        have a diverse selection of songs that cater to everyone's preferences.
+                    </p>
+                    <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+                </div>
+
+                <div class="section-col right">
+                    <div class="container">
+                        <h1 class="col-title">Frequently Asked Questions</h1>
+                        <div class="accordion">
+                          <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title">How long have you been building websites?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                              <p>I have been building websites for just over 6 months. I have a great amount of knowledge in HTML and CSS and I know some JavaScript. I primarily focus on front-end development at the moment although I plan on diving into the world of back-end development in the near future.</p>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Have you got any other skills than just web development?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                              <p>Yes! Through operating a mobile music entertainment business called <a href="https://djfozzydiscos.com" target="_blank">'DJ Fozzy Discos'</a>, I have gained lots of experience in running and managing businesses. I also have experience in social media marketing due to creating advertisements for our business in order to increase our brand awareness.</p>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How can I contact you quickly?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                              <p>You can reach me by sending an email to <a href="mailto:jakewiscombe13@outlook.com">jakewiscombe13@outlook.com</a> or simply by messaging me through one of my social media profiles. Response times may be reduced due to priority of education.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---------- Projects ---------->
+<section class="projects">
+    <div class="section-container">
+
+        <!---------- Project Slide 1 ---------->
+        <div class="content active">
+            <div class="section-row">
+                <div class="section-col left">
+                    <h1 class="col-title">Recent Projects</h1>
+                    <p>Your go-to destination for top-notch music entertainment within your local community and surrounding areas. We are a father and son team, combining our
+                        passion for music and expertise to deliver unforgettable experiences for all types of events.
+                    <br>
+                    <br>
+                        At DJ Fozzy Discos, we understand the power of music and its ability to create an atmosphere, set the mood and bring people together. With our extensive
+                        knowledge and experience, we have curated a vast collection of songs from different genres, eras and styles. From classic hits to the current chart-toppers, we
+                        have a diverse selection of songs that cater to everyone's preferences.
+                    </p>
+                    <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+                </div>
+                <div class="section-col right">
+                    <div class="pro">
+                        <img src="assets/projects/example.png" alt="">
+                        <h3 class="pro-title">Creative & Innovative Solutions</h3>
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit optio aliquid nobis id quaerat nemo accusamus necessitatibus, assumenda modi quo autem ea illo blanditiis beatae minus nihil voluptatum nesciunt iste?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------- Project Slide 2 ---------->
+        <div class="content">
+            <div class="section-row">
+                <div class="section-col left">
+                    <div class="pro">
+                        <img src="assets/projects/example2.png" alt="">
+                        <h3 class="pro-title">Creative & Innovative Solutions</h3>
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit optio aliquid nobis id quaerat nemo accusamus necessitatibus, assumenda modi quo autem ea illo blanditiis beatae minus nihil voluptatum nesciunt iste?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-col right">
+                    <h1 class="col-title">Recent Projects 2</h1>
+                    <p>Your go-to destination for top-notch music entertainment within your local community and surrounding areas. We are a father and son team, combining our
+                        passion for music and expertise to deliver unforgettable experiences for all types of events.
+                    <br>
+                    <br>
+                        At DJ Fozzy Discos, we understand the power of music and its ability to create an atmosphere, set the mood and bring people together. With our extensive
+                        knowledge and experience, we have curated a vast collection of songs from different genres, eras and styles. From classic hits to the current chart-toppers, we
+                        have a diverse selection of songs that cater to everyone's preferences.
+                    </p>
+                    <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!---------- Project Slide 3 ---------->
+        <div class="content">
+            <div class="section-row">
+                <div class="section-col left">
+                    <h1 class="col-title">Recent Projects</h1>
+                    <p>Your go-to destination for top-notch music entertainment within your local community and surrounding areas. We are a father and son team, combining our
+                        passion for music and expertise to deliver unforgettable experiences for all types of events.
+                    <br>
+                    <br>
+                        At DJ Fozzy Discos, we understand the power of music and its ability to create an atmosphere, set the mood and bring people together. With our extensive
+                        knowledge and experience, we have curated a vast collection of songs from different genres, eras and styles. From classic hits to the current chart-toppers, we
+                        have a diverse selection of songs that cater to everyone's preferences.
+                    </p>
+                    <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+                </div>
+                <div class="section-col right">
+                    <div class="pro">
+                        <img src="assets/projects/example3.png" alt="">
+                        <h3 class="pro-title">Creative & Innovative Solutions</h3>
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit optio aliquid nobis id quaerat nemo accusamus necessitatibus, assumenda modi quo autem ea illo blanditiis beatae minus nihil voluptatum nesciunt iste?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------- Project Slide 4 ---------->
+        <div class="content">
+            <div class="section-row">
+                <div class="section-col left">
+                    <div class="pro">
+                        <img src="assets/projects/example4.jpg" alt="">
+                        <h3 class="pro-title">Creative & Innovative Solutions</h3>
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit optio aliquid nobis id quaerat nemo accusamus necessitatibus, assumenda modi quo autem ea illo blanditiis beatae minus nihil voluptatum nesciunt iste?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-col right">
+                    <h1 class="col-title">Recent Projects 2</h1>
+                    <p>Your go-to destination for top-notch music entertainment within your local community and surrounding areas. We are a father and son team, combining our
+                        passion for music and expertise to deliver unforgettable experiences for all types of events.
+                    <br>
+                    <br>
+                        At DJ Fozzy Discos, we understand the power of music and its ability to create an atmosphere, set the mood and bring people together. With our extensive
+                        knowledge and experience, we have curated a vast collection of songs from different genres, eras and styles. From classic hits to the current chart-toppers, we
+                        have a diverse selection of songs that cater to everyone's preferences.
+                    </p>
+                    <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="section-container">
+        <div class="section-row">
+
+            <div class="section-col top">
+                <section class="stats">
+                    <div class="counter-container">
+                        <i class="fab fa-twitter fa-3x"></i>
+                        <div class="counter" data-target="120"></div>
+                        <span>Twitter Followers</span>
+                    </div>
+
+                    <div class="counter-container">
+                        <i class="fab fa-youtube fa-3x"></i>
+                        <div class="counter" data-target="1997"></div>
+                        <span>Youtube Subscribers</span>
+                    </div>
+
+                    <div class="counter-container">
+                        <i class="fab fa-facebook fa-3x"></i>
+                        <div class="counter"data-target="7500"></div>
+                        <span>Facebook Fans</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="section-col bottom">
+        <h4 class="footer-title">Jake Wiscombe</h4>
+        <p>I'm a young student, currently studying for their A-Levels, who has a growing passion for web design and development. Hoping to fulfill a career in web development in the near future.</p>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com/djfozzydiscos?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://m.me/DJFozzyDiscos/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+
+            <p>Copyright © 2023 Jake Wiscombe - All rights reserved.</p>
+
+        </div>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
